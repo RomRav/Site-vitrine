@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Liens Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <!--CSS perso-->
+    <link href="style.css" rel="stylesheet">
+    <!--Integration du CSS et JS Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn.website.dish.co/static/20211216070204/static/icons/favicons/restaurant.ico">
+    <title>Exercice site vitrine</title>
+</head>
+  <body>
+      <header>
+        <!--Barre de navigation-->
+          <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+              <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                  <ul class="navbar-nav ms-auto mb-2 ">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#access">Accés</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#schedule">Horaire d'ouverture</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#payment">Moyens de paiement</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#service">Services</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#contact">Nous contacter</a>
+                    </li>
+                    <!--Liste déroulante des langues-->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Langues
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                          <img src="https://cdn.website.dish.co/static/20211216070204/static/img/flags/flags-iso/flat/32/CZ.png"/>
+                          <span class="languageName">Čeština</span>
+                          </li>
+                          <li>
+                          <a href="?lang=zh">
+                          <img src="https://cdn.website.dish.co/static/20211216070204/static/img/flags/flags-iso/flat/32/CN.png"/>
+                          <span class="languageName">
+                          简体中文</span>
+                          </a>
+                          </li>
+                          <li>
+                          <a href="?lang=de">
+                          <img src="https://cdn.website.dish.co/static/20211216070204/static/img/flags/flags-iso/flat/32/DE.png"/>
+                          <span class="languageName">
+                          Deutsch</span>
+                          </a>
+                          </li>
+                          <li>
+                          <a href="?lang=en">
+                          <img src="https://cdn.website.dish.co/static/20211216070204/static/img/flags/flags-iso/flat/32/GB.png"/>
+                          <span class="languageName">
+                          English</span>
+                          </a>
+                          </li>
+                          <li>
+                          <a href="?lang=es">
+                          <img src="https://cdn.website.dish.co/static/20211216070204/static/img/flags/flags-iso/flat/32/ES.png"/>
+                          <span class="languageName">
+                          Español</span>
+                          </a>
+                          </li>
+                          <li>
+                          <a href="?lang=fr">
+                          <img src="https://cdn.website.dish.co/static/20211216070204/static/img/flags/flags-iso/flat/32/FR.png"/>
+                          <span class="languageName">
+                          Français</span>
+                          </a>
+                          </li>
+                          <li>
+                          <a href="?lang=hr">
+                          <img src="https://cdn.website.dish.co/static/20211216070204/static/img/flags/flags-iso/flat/32/HR.png"/>
+                          <span class="languageName">
+                          Hrvatski</span>
+                          </a>
+                          </li>
+                          <li>
+                          <a href="?lang=it">
+                          <img src="https://cdn.website.dish.co/static/20211216070204/static/img/flags/flags-iso/flat/32/IT.png"/>
+                          <span class="languageName">
+                          Italiano</span>
+                          </a>
+                          </li>
+                          <li>
+                          <a href="?lang=ja">
+                          <img src="https://cdn.website.dish.co/static/20211216070204/static/img/flags/flags-iso/flat/32/JP.png"/>
+                          <span class="languageName">
+                          日本語</span>
+                          </a>
+                          </li>
+                          <li>
+                          <a href="?lang=hu">
+                          <img src="https://cdn.website.dish.co/static/20211216070204/static/img/flags/flags-iso/flat/32/HU.png"/>
+                          <span class="languageName">
+                          Magyar</span>
+                          </a>
+                          </li>
+                          <li>
+                          <a href="?lang=nl">
+                          <img src="https://cdn.website.dish.co/static/20211216070204/static/img/flags/flags-iso/flat/32/NL.png"/>
+                          <span class="languageName">
+                          Nederlands</span>
+                          </a>
+                          </li>
+                          <li>
+                          <a href="?lang=pl">
+                          <img src="https://cdn.website.dish.co/static/20211216070204/static/img/flags/flags-iso/flat/32/PL.png"/>
+                          <span class="languageName">
+                          Polski</span>
+                          </a>
+                          </li>
+                          <li>
+                          <a href="?lang=pt">
+                          <img src="https://cdn.website.dish.co/static/20211216070204/static/img/flags/flags-iso/flat/32/PT.png"/>
+                          <span class="languageName">
+                          Português</span>
+                          </a>
+                          </li>
+                          <li>
+                          <a href="?lang=ro">
+                          <img src="https://cdn.website.dish.co/static/20211216070204/static/img/flags/flags-iso/flat/32/RO.png"/>
+                          <span class="languageName">
+                          Română</span>
+                          </a>
+                          </li>
+                          <li>
+                          <a href="?lang=ru">
+                          <img src="https://cdn.website.dish.co/static/20211216070204/static/img/flags/flags-iso/flat/32/RU.png"/>
+                          <span class="languageName">
+                          Русский</span>
+                          </a>
+                          </li>
+                          <li>
+                          <a href="?lang=sk">
+                          <img src="https://cdn.website.dish.co/static/20211216070204/static/img/flags/flags-iso/flat/32/SK.png"/>
+                          <span class="languageName">
+                          Slovensky</span>
+                          </a>
+                          </li>
+                          <li>
+                          <a href="?lang=tr">
+                          <img src="https://cdn.website.dish.co/static/20211216070204/static/img/flags/flags-iso/flat/32/TR.png"/>
+                          <span class="languageName">
+                          Türkçe</span>
+                          </a>
+                          </li>
+                          <li>
+                          <a href="?lang=uk">
+                          <img src="https://cdn.website.dish.co/static/20211216070204/static/img/flags/flags-iso/flat/32/UA.png"/>
+                          <span class="languageName">
+                          Українська</span>
+                          </a>
+                          </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <div class="d-flex align-content-center justify-content-center" style="height:500px;">
+              <hr/>
+              <h2 class="text-white fs-1">montecatini</h2>
+            </div>    
+      </header>
+      <!--Contenu de la page-->
+      <main>    
+        <!--Desciption du restaurant-->
+        <div class="container col-6 my-5">
+          <div class="justify-content-center align-self-center text-center fw-bolder row d-flex">
+            <div class="orange col-1">&ndash;&ndash;&ndash;&ndash;</div>
+            <h2 class="col-7">Restaurant | montecatini | Boulogne Billancourt</h2>
+            <div class="orange col-1">&ndash;&ndash;&ndash;&ndash;</div>
+          </div>
+          <div class="text-center fs-6 fw-bolder mt-3">
+            <p>
+              Si vous souhaitez manger un repas italien et recherchez un restaurant où passer la soirée, 
+              vous êtes les bienvenus chez nous. Dans notre restaurant montecatini, nous servons des plats variés et
+              succulents que vous pourrez savourer dans une ambiance authentique. Vous pouvez vous installer au soleil
+              dans notre sublime espace et profiter de l’été avec des amis.
+            </p>
+            <div class="align-self-center mx-auto orange col-1">&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;</div>
+          </div>
+          <div class="text-center fs-6 fw-bolder mt-3">
+            <h2 class=>Offre</h2>
+            <p>
+              Laissez-vous séduire et profitez de la cuisine italienne et variée. Nous avons un espace séparé si vous voulez fumer.
+            </p>
+            <div class="orange col-1 mx-auto">&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;</div>
+          </div>
+          <div class="text-center fs-6 fw-bolder mt-3">
+            <h2>Nous vous souhaitons une excellente soirée </h2>
+            <p>
+              Nous nous réjouissons de votre visite ! Vous êtes toujours les bienvenus.
+              Le paiement est possible par MasterCard, carte de débit, tickets repas, 
+              carte VISA ou de manière classique en espèces. 6 jours par semaine, 
+              vous pouvez nous rendre visite de 12h00 à 14h30 et de 19h00 à 22h30. 
+              Notre jour de repos est le lundi.
+            </p>
+            <div class="orange col-1 mx-auto">&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;</div>
+          </div>
+        </div>
+        <div class="outerContainer">
+          <!--Section accés-->   
+          <div  id="access" class="d-flex">
+            <div class="container d-flex flex-column justify-content-center align-content-center">
+                <button class="text-white fw-bold fs-5 shadow-sm col-2 p-2 btn-lg map-btn fs-6 mt-auto mx-auto">Afficher la carte</button>
+                <p class="mb-auto mx-auto fw-bold">Votre adresse IP sera envoyée à Google Maps.</p>
+            </div>       
+          </div>
+          <!--Section horaires-->
+          <div class="container col-4 d-flex flex-column" id="schedule">
+            <div class="row text-center pt-3">
+              <i class="bi bi-geo-alt-fill orange fw-bold fs-3"></i>
+            </div>
+            <div class="row justify-content-center align-content-center">
+              <p class="text-center">11 rue bartholdi, 92100 Boulogne Billancourt, France</p>
+            </div>
+            <div class="nos row justify-content-center align-content-center">
+              <h2 class="fw-bold fs-1 text-center orange">Nos</h2>
+            </div>
+            <div class="row justify-content-center align-content-center">
+              <h1 class="fw-bold  text-center">Horaires d'ouverture</h1>
+              <div class="orange fs-1 fw-bold text-center mx-auto">&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;</div>
+            </div>
+            <table class="text-center">
+              <tbody>
+                <tr class="align-top">
+                  <th>Lundi</th>
+                  <td>
+                    <div class="fw-bold orange">fermé</div>
+                  </td>
+                </tr>
+                <tr class="align-top">
+                  <th>Mardi</th>
+                  <td>
+                    <div class="fw-bold orange">
+                      12:00 &ndash; 14:30<br/>
+                      19:00 &ndash; 22:30
+                    </div>
+                  </td>
+                </tr>
+                <tr class="align-top">
+                  <th>Mercredi</th>
+                  <td>
+                    <div class="fw-bold orange">
+                      12:00 &ndash; 14:30<br/>
+                      19:00 &ndash; 22:30
+                    </div>
+                  </td>
+                </tr>
+                <tr class="align-top">
+                  <th>Jeudi</th>
+                  <td>
+                    <div class="fw-bold orange">
+                      12:00 &ndash; 14:30<br/>
+                      19:00 &ndash; 22:30
+                    </div>
+                  </td>
+                </tr>
+                <tr class="align-top">
+                  <th>Vendredi</th>
+                  <td>
+                    <div class="fw-bold orange">
+                      12:00 &ndash; 14:30<br/>
+                      19:00 &ndash; 22:30
+                    </div>
+                  </td>
+                </tr>
+                <tr class="align-top">
+                  <th>Samedi</th>
+                  <td>
+                    <div class="fw-bold orange">
+                      12:00 &ndash; 14:30<br/>
+                      19:00 &ndash; 22:30
+                    </div>
+                  </td>
+                </tr>
+                <tr class="align-top">
+                  <th>Dimanche</th>
+                  <td>
+                    <div class="fw-bold orange">
+                      12:00 &ndash; 14:30<br/>
+                      19:00 &ndash; 22:30
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>    
+        <!--Section paiement-->
+        <div class="container mt-5" id = "payment">
+          <div class="nos row justify-content-center align-content-center">
+            <h2 class="fw-bold fs-1 text-center orange">Options de paiement</h2>
+          </div>
+          <div class="row justify-content-center align-content-center">
+            <h2 class="fw-bolder fs-1 text-center">disponibles</h2>
+            <div class="orange fs-1 fw-bold text-center mx-auto">&ndash;&ndash;&ndash;&ndash;</div>
+          </div>
+          <div class="row justify-content-center align-content-center">
+            <ul class="d-flex justify-content-around col-6 text-secondary">
+              <li>
+                <i class="m-auto fs-1 bi bi-cash row"></i>
+                <span class="text-center row">Espèces</span>
+              </li>
+              <li>
+                <i class="mx-auto fs-1 bi bi-credit-card-fill row"></i>
+                <span class="row">MasterCard</span>
+              </li>
+              <li>
+                <i class="m-auto fs-1 bi bi-ticket row"></i>
+                <span class="row">Ticket Rest..</span> 
+              </li>
+              <li>
+                <i class="m-auto fs-1 bi bi-credit-card row"></i>
+                <span class="m-auto row">VISA</span>
+              </li>
+              <li>
+                <i class="m-auto fs-1 bi bi-credit-card-2-front row"></i>
+                <span class="row">Carte de débit</span>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+        <!--Section Service--> 
+        <div id="service" class=" mt-4">
+          <div class="nos justify-content-center align-content-center">
+            <h2 class="fw-bold fs-1 text-center orange">Nos</h2>
+          </div>
+          <div class="row justify-content-center align-content-center">
+            <h2 class="fw-bold fs-1 text-center">services</h2>
+            <div class="orange fs-1 fw-bold text-center mx-auto">&ndash;&ndash;&ndash;&ndash;</div>
+          </div>
+          <div class="row justify-content-center align-content-center">
+            <ul class="d-flex justify-content-around col-6 text-secondary">
+              <li>
+                <div class="bg-white service-icon-bg d-flex justify-content-center">
+                  <i class="orange row bi bi-cup-straw service-icon m-auto"></i>
+                </div>
+                <span class="row text-white">Terasse</span>
+              </li>
+              <li>
+                <div class="bg-white service-icon-bg d-flex justify-content-center">
+                  <i class="orange row bi bi-cloud service-icon m-auto"></i>
+                </div> 
+                <span class="row text-white">Coin fumeurs</span>
+              </li>
+            </ul>
+          </div> 
+        </div>
+        <!--Section Contact-->
+        <div id="contact" class="container mt-5">
+          <div class="nos justify-content-center align-content-center">
+            <h2 class="fw-bold fs-1 text-center orange">Informations</h2>
+          </div>
+          <div class="row justify-content-center align-content-center">
+            <h2 class="fw-bold fs-1 text-center">pratiques</h2>
+            <div class="orange fs-1 fw-bold text-center mx-auto">&ndash;&ndash;&ndash;&ndash;</div>
+          </div>
+          <div class="container">
+            <div class="row d-flex justify-content-center text-center">
+              <a class="col-2 info-card me-4" href="#access">
+                <i class=" bi bi-geo-alt-fill orange fw-bold fs-3"></i>
+                <h6 class="text-black">Nous trouver</h6>
+                <p class="orange">11 rue Bartholdi 92100 Boulogne Billancourt France</p>
+              </a>
+              <a class="d-block col-2 info-card mx-4" href="mailto:sadek92000@hotmail.fr">
+                <i class=" bi bi-envelope-fill orange fw-bold fs-3"></i>
+                <h6 class="text-black">Nous contacter par e-mail</h6>
+                <p class="orange">sadek92000@hotmail.fr</p>
+              </a>
+              <a class="col-2 info-card ms-3" href="tel:+33140848572">
+                <i class=" bi bi-telephone-fill orange fw-bold fs-3"></i>
+                <h6 class="text-black">Nous contacter par téléphone</h6>
+                <p class="orange">+33140848572</p>
+              </a>
+            <div class="row info-card col-7 mt-5">
+                <i class=" bi bi-envelope-fill orange fw-bold fs-3"></i>
+                <h6 class="text-black">Envoyez-nous un message</h6>
+                <form class="text-secondary">
+                  <div class="row input-group">
+                    <input type="text" class="form-control col-auto m-3" placeholder="Votre nom"/>
+                    <input type="mail" class="form-control col-auto m-3" placeholder="Votre adresse e-mail"/>
+                    <input type="text" class="form-control col-auto m-3" placeholder="Votre n° de téléphone"/>
+                  </div>
+                  <div class="row input-group">
+                    <input type="text" class="form-control col-8 m-3" placeholder="Objet"/>
+                  </div>
+                  <div class="row input-group">
+                    <textarea id="messageInput" oninput="compteInpuLength()" class="form-control col-8 m-3" placeholder="Votre message"></textarea>
+                    <p id="inputLength" class="orange text-center">0/500</p>
+                  </div>
+                  <div class="row">
+                    <button type="button" class="text-white fw-bold fs-5 shadow-sm col-2 p-2 btn-lg map-btn fs-6 mt-auto mx-auto">Envoyer</button>
+                  </div>
+                </form>
+             </div>
+            </div>
+          </div>
+        </div>
+      </main> 
+      <footer class="bg-black">
+
+      </footer> 
+  </body>
+  <!--JS-->
+  <script>
+    function compteInpuLength(){
+      var inputMessage = document.getElementById('messageInput');
+      var inputLength = inputMessage.value.length;
+      var inputLengthMessage = document.getElementById('inputLength');
+      inputLengthMessage.innerHTML = inputLength + "/500";
+    }
+  </script>
+</html>

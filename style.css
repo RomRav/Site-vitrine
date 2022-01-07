@@ -1,0 +1,61 @@
+header{
+    background-image: url("./images/image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+#access{
+    box-shadow: inset 0 0 0 1000px rgba(143,143,143,0.7);
+    background-image: url("./images/world_map_placeholder.png");
+    background-position: center;
+    height: 450px;
+    width: 100vw;
+}
+#schedule{
+    transform: translateY(-50px); 
+    left: calc(100vw - 67%);
+    z-index: 1;
+    background-color: white;
+}
+#service{
+    background-image: url("./images/bg-services-big.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+}
+.map-btn{
+    background-color: #ff5722;
+}
+.orange{
+    color: rgb(228, 77, 30);
+}
+.outerContainer{
+    position: relative;
+}
+.nos{
+    font-family: Patrick Hand;
+}
+ul{
+    list-style-type: none;
+}
+.service-icon{
+    font-size: 5em;
+}
+.service-icon-bg{
+    width: 140px;
+    height: 140px;
+    border-radius: 50% 50%;
+    border: 4px solid grey;
+}
+.info-card{
+    background-color: rgba(143,143,143,0.1);
+}
+#contact a{
+    text-decoration: none;
+}
+input{
+    background-color: rgba(143,143,143,0.1);
+}
